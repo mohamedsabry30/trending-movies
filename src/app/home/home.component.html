@@ -1,0 +1,78 @@
+<app-homeheader [trendingMovies]="trendingMovies"></app-homeheader>
+
+<div class="container">
+  <div class="row py-5">
+    <div class="col-md-4">
+      <h2 class="mt-4">
+        Trending Movies to Watch <br />
+        Right Now
+      </h2>
+      <p class="my-2 second-color">most watched</p>
+    </div>
+
+    <div *ngFor="let movie of trendingMovies" class="col-md-2">
+      <a [routerLink]="['/details', 'movie', movie.id]">
+        <div class="movie my-2 position-relative">
+          <img
+            [src]="imgPrifix + movie.poster_path"
+            [alt]="movie.title"
+            class="w-100 shadow-sm"
+          />
+          <h3 class="h6 my-2">{{ movie.title }}</h3>
+
+          <div class="vote">{{ movie.vote_average.toFixed(1) }}</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row py-5">
+    <div class="col-md-4">
+      <!-- <div class="w-25"></div> -->
+      <h2 class="mt-4">
+        Trending Tv shows to Watch <br />
+        Right Now
+      </h2>
+      <p class="my-2 second-color">most watched</p>
+    </div>
+
+    <div *ngFor="let tv of trendingTv" class="col-md-2">
+      <a [routerLink]="['/details', 'tv', tv.id]">
+        <div class="movie my-2 position-relative">
+          <img
+            [src]="imgPrifix + tv.poster_path"
+            [alt]="tv.title"
+            class="w-100 shadow-sm"
+          />
+          <h3 class="h6 my-2">{{ tv.original_name }}</h3>
+
+          <div class="vote">{{ tv.vote_average.toFixed(1) }}</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="row py-5">
+    <div class="col-md-4">
+      <!-- <div class="w-25"></div> -->
+      <h2 class="mt-4">
+        Trending Stars to Follow <br />
+        Right Now
+      </h2>
+      <!-- <p class="my-2 second-color">most watched</p> -->
+    </div>
+
+    <div *ngFor="let person of trendingPeople" class="col-md-2">
+      <a [routerLink]="['/details', 'person', person.id]">
+        <div class="movie my-2 position-relative">
+          <img
+            [src]="imgPrifix + person.profile_path"
+            [alt]="person.name"
+            class="w-100 shadow-sm"
+          />
+          <h3 class="h6 my-2">{{ person.name }}</h3>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

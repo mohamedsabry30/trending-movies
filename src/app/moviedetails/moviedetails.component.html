@@ -1,0 +1,21 @@
+<div class="movied-container p-5">
+  <!-- if movie / tvshow -->
+  <img *ngIf="details.poster_path" [src]="imgPrifix + details?.poster_path" />
+  <!-- if person -->
+  <img *ngIf="details.profile_path" [src]="imgPrifix + details?.profile_path" />
+  <div>
+    <!-- if movie -->
+    <h1 *ngIf="details.title">{{ details?.title }}</h1>
+    <!-- if tvshow -->
+    <h1 *ngIf="details.original_name">
+      {{ details?.original_name }}
+    </h1>
+    <!-- if person -->
+    <h1 *ngIf="details.name">{{ details?.name }}</h1>
+    <p *ngIf="details.overview">{{ details.overview }}</p>
+    <!-- if person -->
+    <p *ngIf="details.biography" style="max-height: 625px; overflow: overlay">
+      {{ details.biography }}
+    </p>
+  </div>
+</div>

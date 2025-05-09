@@ -1,0 +1,58 @@
+<div class="w-50 mx-auto my-5 p-5">
+  <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+  <form [formGroup]="loginForm" (ngSubmit)="loginFormSubmit(loginForm)">
+    <div class="form-group">
+      <label for="username">User name</label>
+      <!-- user name -->
+      <input
+        formControlName="username"
+        type="text"
+        class="form-control"
+        id="username"
+      />
+      <div
+        *ngIf="
+          loginForm.get('username')?.errors &&
+          loginForm.get('username')?.touched
+        "
+        class="alert alert-danger"
+      >
+        <p *ngIf="loginForm.get('username')?.errors?.['required']">
+          you must enter user name to login
+        </p>
+        <p *ngIf="loginForm.get('username')?.errors?.['minlength']">
+          user name must be min 3 characters
+        </p>
+        <p *ngIf="loginForm.get('username')?.errors?.['maxlength']">
+          user name can't exceed 10 characters
+        </p>
+      </div>
+    </div>
+    <!-- password -->
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        formControlName="password"
+        type="text"
+        class="form-control"
+        id="password"
+      />
+      <div
+        *ngIf="
+          loginForm.get('password')?.errors &&
+          loginForm.get('password')?.touched
+        "
+        class="alert alert-danger"
+      >
+        <p *ngIf="loginForm.get('password')?.errors?.['required']">
+          password is required to sign in
+        </p>
+        <p *ngIf="loginForm.get('password')?.errors?.['pattern']">
+          password must be from 4 to 9 charachters starting with capital and
+          include numbers
+        </p>
+      </div>
+    </div>
+    <button class="btn btn-light" type="submit">Login</button>
+  </form>
+</div>
