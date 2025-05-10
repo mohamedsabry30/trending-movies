@@ -15,33 +15,25 @@ You can check out the live version here:
 
 ## Screenshots
 
-### 1. Home Page
+### Home Page
+
+![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/homepage.png)
+
+### Media Details
+
+![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/movie-details.png)
+
+### About
+
+![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/about.png)
+
+### Responsive View
 
 ![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/responsive.png)
 
-### 2. Movie Details
+### Celebrity Overview
 
-![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/responsive.png)
-
-### 3. TV Shows List
-
-![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/responsive.png)
-
-### 4. Celebrity Overview
-
-![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/responsive.png)
-
-### 5. Search Results
-
-![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/responsive.png)
-
-### 6. Navigation Menu
-
-![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/responsive.png)
-
-### 7. Responsive View
-
-![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/responsive.png)
+![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/celeb.png)
 
 ## About Me
 

@@ -1,9 +1,13 @@
 .movied-container {
   display: flex;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .movied-container > img {
   max-width: 35rem;
+  max-height: 750px;
 }
 
 .movied-container > div {
@@ -20,7 +24,7 @@
   padding-left: 4rem;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 970px) {
   .movied-container {
     flex-direction: column;
     text-align: center;
