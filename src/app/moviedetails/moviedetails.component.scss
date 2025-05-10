@@ -1,6 +1,5 @@
 .movied-container {
   display: flex;
-  // justify-content: space-between;
 }
 
 .movied-container > img {
@@ -35,7 +34,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 575px) {
   .movied-container {
     flex-direction: column;
     text-align: center;
@@ -46,14 +45,15 @@
     padding: 0;
   }
   .movied-container > img {
+    width: 100%;
     max-width: 15rem;
     margin: auto;
   }
   .movied-container h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   .movied-container p {
     padding: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }

@@ -2,7 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-// $bgColor: #131722;
 $bgColor: #181a19;
 $lightBgColor: #24baef;
 $bgTransparent: rgba(36, 186, 239, 0.6);
@@ -17,7 +16,6 @@ $secondFontColor: #949cb0;
 
 body {
   background-color: $bgColor;
-  // background-color: wheat;
   font-family: "Montserrat", sans-serif;
   color: $fontColor;
 }
@@ -77,7 +75,6 @@ app-homeheader section {
 
 @media (max-width: 400px) {
   app-homeheader section {
-    // height: calc(100vh - 60px);
     height: 70vh;
   }
 }
