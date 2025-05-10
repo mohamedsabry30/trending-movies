@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   isLoggendin: boolean = false;
   error: any = '';
 
-  loginSub: any;
+  loginSub: any[] = [];
 
   constructor(private _AuthService: AuthService, private _Router: Router) {}
 
@@ -38,12 +38,13 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   loginFormSubmit(loginData: FormGroup) {
-    this.loginSub = this._AuthService.login(loginData.value).subscribe({
+    this.loginSub[0] = this._AuthService.login(loginData.value).subscribe({
       next: (response: any) => {
         localStorage.setItem('userData', JSON.stringify(response.user));
 
         this._AuthService.saveCurrentUser();
         this._Router.navigate(['/home']);
+        console.log(this.loginSub);
       },
       error: (error: any) => {
         this.error = error.error.message;
@@ -53,6 +54,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.loginSub.unsubscribe();
+    if (!this.loginSub.length) return;
+    this.loginSub[0].unsubscribe();
   }
 }
