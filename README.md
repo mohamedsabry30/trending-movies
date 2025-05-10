@@ -48,4 +48,3 @@ You can check out the live version here:
 Front-end developer with experience in web development using Angular.  
 Graduated from the Faculty of Engineering, Telecommunication Department.  
 Skilled in building responsive, user-friendly web applications.
-dsagdsa
