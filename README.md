@@ -29,7 +29,7 @@ You can check out the live version here:
 
 ### Responsive View
 
-![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/responsive.png)
+![App Screenshot](https://raw.githubusercontent.com/mohamedsabry95/trending-movies/main/screenshots/responsiven.png)
 
 ### Celebrity Overview
 
