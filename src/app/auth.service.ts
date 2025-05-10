@@ -28,13 +28,13 @@ export class AuthService implements OnInit {
   }
 
   regitster(formData: any): Observable<any> {
-    const url = environments.baseUrl + '/auth/signup';
+    const url = environments.baseUrl + `/sabry-movies-app` + '/auth/signup';
     // post two args(api,data)
     return this._HttpClient.post(url, formData);
   }
 
   login(loginData: any): Observable<any> {
-    const url = environments.baseUrl + '/auth/login';
+    const url = environments.baseUrl + `sabry-movies-app` + '/auth/login';
     return this._HttpClient.post(url, loginData);
   }
 
