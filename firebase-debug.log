@@ -1,0 +1,16 @@
+[debug] [2025-05-10T08:56:43.067Z] ----------------------------------------------------------------------
+[debug] [2025-05-10T08:56:43.077Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Mohamed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-05-10T08:56:43.078Z] CLI Version:   14.3.1
+[debug] [2025-05-10T08:56:43.078Z] Platform:      win32
+[debug] [2025-05-10T08:56:43.079Z] Node Version:  v22.14.0
+[debug] [2025-05-10T08:56:43.080Z] Time:          Sat May 10 2025 11:56:43 GMT+0300 (Eastern European Summer Time)
+[debug] [2025-05-10T08:56:43.080Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-10T08:56:44.004Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-10T08:56:44.005Z] > authorizing via signed-in user (moyaphsab@gmail.com)
+[debug] [2025-05-10T08:56:44.006Z] [iam] checking project trending-movies-fe707 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-05-10T08:56:44.010Z] Checked if tokens are valid: true, expires at: 1746869438650
+[debug] [2025-05-10T08:56:44.011Z] Checked if tokens are valid: true, expires at: 1746869438650
+[debug] [2025-05-10T08:56:44.014Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/trending-movies-fe707:testIamPermissions [none]
+[debug] [2025-05-10T08:56:44.015Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/trending-movies-fe707:testIamPermissions x-goog-quota-user=projects/trending-movies-fe707
+[debug] [2025-05-10T08:56:44.015Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/trending-movies-fe707:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
