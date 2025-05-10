@@ -34,7 +34,7 @@ export class AuthService implements OnInit {
   }
 
   login(loginData: any): Observable<any> {
-    const url = environments.baseUrl + `sabry-movies-app` + '/auth/login';
+    const url = environments.baseUrl + `/sabry-movies-app` + '/auth/login';
     return this._HttpClient.post(url, loginData);
   }
 
