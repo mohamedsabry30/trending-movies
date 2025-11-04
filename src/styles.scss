@@ -38,7 +38,7 @@ a:hover {
 
 .vote {
   background-color: $lightBgColor;
-  max-width: 30px;
+  max-width: 35px;
   text-align: center;
   position: absolute;
   top: 0;
@@ -73,11 +73,11 @@ app-homeheader section {
   // height: 50vh;
 }
 
-@media (max-width: 400px) {
-  app-homeheader section {
-    height: 70vh;
-  }
-}
+// @media (max-width: 400px) {
+//   app-homeheader section {
+//     height: 70vh;
+//   }
+// }
 
 app-homeheader section .container > h1 {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

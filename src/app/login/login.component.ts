@@ -38,19 +38,25 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   loginFormSubmit(loginData: FormGroup) {
-    this.loginSub[0] = this._AuthService.login(loginData.value).subscribe({
-      next: (response: any) => {
-        localStorage.setItem('userData', JSON.stringify(response.user));
+    // this.loginSub[0] = this._AuthService.login(loginData.value).subscribe({
+    //   next: (response: any) => {
+    //     localStorage.setItem('userData', JSON.stringify(response.user));
 
-        this._AuthService.saveCurrentUser();
-        this._Router.navigate(['/home']);
-        console.log(this.loginSub);
-      },
-      error: (error: any) => {
-        this.error = error.error.message;
-        console.log(error);
-      },
-    });
+    //     this._AuthService.saveCurrentUser();
+    //     this._Router.navigate(['/home']);
+    //     console.log(this.loginSub);
+    //   },
+    //   error: (error: any) => {
+    //     this.error = error.error.message;
+    //     console.log(error);
+    //   },
+    // });
+
+    // force login
+    console.log(loginData.value);
+    localStorage.setItem('userData', JSON.stringify(loginData.value));
+    this._AuthService.saveCurrentUser();
+    this._Router.navigate(['/home']);
   }
 
   ngOnDestroy(): void {

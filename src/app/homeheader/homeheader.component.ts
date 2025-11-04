@@ -15,17 +15,21 @@ export class HomeheaderComponent implements OnChanges {
     loop: true,
     margin: 8,
     mouseDrag: true,
-    touchDrag: false,
+    touchDrag: true,
     pullDrag: false,
     dots: false,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    slideTransition: 'linear',
+    autoplayHoverPause: true,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
       0: {
         items: 1,
       },
-      400: {
-        items: 2,
+      390: {
+        items: 3,
       },
       740: {
         items: 6,
@@ -34,7 +38,7 @@ export class HomeheaderComponent implements OnChanges {
         items: 8,
       },
     },
-    nav: true,
+    nav: false,
   };
 
   @Input() trendingMovies: any[] = [];

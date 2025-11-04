@@ -23,8 +23,9 @@ export class AuthService implements OnInit {
     // this.currentUser = jwtDecode(token);
 
     let userData: any = localStorage.getItem('userData') || '';
-    let token: any = JSON.parse(userData);
-    this.currentUser.next(token);
+    // let token: any = JSON.parse(userData);
+    this.currentUser.next(JSON.parse(userData));
+    // this.currentUser.next(token);
   }
 
   regitster(formData: any): Observable<any> {
