@@ -19,9 +19,9 @@ export class HomeheaderComponent implements OnChanges {
     pullDrag: false,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 4000,
-    slideTransition: 'linear',
-    autoplayHoverPause: true,
+    // autoplayTimeout: 4000,
+    // slideTransition: 'linear',
+    // autoplayHoverPause: true,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
