@@ -1,6 +1,7 @@
 <div class="w-50 mx-auto my-5 p-5">
   <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
   <form [formGroup]="loginForm" (ngSubmit)="loginFormSubmit(loginForm)">
+    <p class="my-2">For website showcase login with any data.</p>
     <div class="form-group">
       <label for="username">User name</label>
       <!-- user name -->
@@ -54,5 +55,8 @@
       </div>
     </div>
     <button class="btn btn-light" type="submit">Login</button>
+    <span class="ml-1 mt-1 d-block"
+      >Not a member? signup<a routerLink="/register"> Here</a></span
+    >
   </form>
 </div>

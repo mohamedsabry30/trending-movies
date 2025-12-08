@@ -28,10 +28,10 @@ export class RegisterComponent implements OnInit {
       Validators.required,
       Validators.pattern('^[A-Z][a-z0-9]{3,8}$'),
     ]),
-    confirmPassword: new FormControl(null, [
-      Validators.required,
-      Validators.pattern('^[A-Z][a-z0-9]{3,8}$'),
-    ]),
+    // confirmPassword: new FormControl(null, [
+    //   Validators.required,
+    //   Validators.pattern('^[A-Z][a-z0-9]{3,8}$'),
+    // ]),
   });
 
   errors: any = '';
